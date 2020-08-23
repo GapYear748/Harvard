@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+        #hi {
+        position: absolute;
+        left: 200px;
+        top: 200px;
+        }
+        .him {
+        width: 510px;
+        height: 20px;
+        }
+        .foo {
+        width: 241px;
+        height: 20px;
+        }
+        #k {
+        position: absolute;
+        left: 404px;
+        height: 27px;
+        background-color: #3383ff;
+        color: white;
+        font-weight: bold;
+        border: none;
+        }
+        h4 {
+        font-weight: normal;
+        font-family: sans-serif;
+        font-size: 14px;
+        position: absolute;
+        left: 40px;
+        top: 145px;
+        }
+        h6 {
+        font-weight: normal;
+        font-family: sans-serif;
+        font-size: 12px;
+        }
+        #all {
+        position: absolute;
+        left: 40px;
+        top: 177px;
+        }
+        #exact {
+        position: absolute;
+        left: 40px;
+        top: 225px;
+        }
+        #any {
+        position: absolute;
+        left: 40px;
+        top: 275px;
+        }
+        #none {
+        position: absolute;
+        left: 40px;
+        top: 320px;
+        }
+        .b {
+        text-align:center;
+        position:absolute;
+        left:1250px;
+        top:20px;
+        }
+        h3 {
+        font-weight: normal;
+        font-family: sans-serif;
+        font-size: 18px;
+        position:absolute;
+        left:40px;
+        top:60px;
+        color:rgb(220,20,60);
+        }
+        </style>
+    </head>
+    <body>
+    <h3> Advanced Search </h3>
+    <h4>  Find pages with... </h4>
+    <h6 id="all"> all these words: </h6>
+    <h6 id="exact"> this exact word or phrase: </h6>
+    <h6 id="any"> any of these words: </h6>
+    <h6 id="none"> none of these words: </h6>
+    <form action="https://www.google.com/search" id="hi">
+    <input type="text" name="as_q" class="him">
+    <br>
+    <br>
+    <input type="text" name="as_epq" class="him">
+    <br>
+    <br>
+<input type="text" name="as_oq" class="him">
+<br>
+<br>
+<input type="text" name="as_eq" class="him">
+    <br>
+    <br>
+    <input type="submit" value="Advanced Search" id="k">
+
+    </form>
+    <div class="b">
+    <a href="QueryText.html">Google Search page</a>
+    </div>
+    </body>
+</html>
