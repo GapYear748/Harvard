@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 6px;
+  margin-top: 1%;
+  border: 1px solid #ccc;
+  
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+
+}
+
+input[type=submit] {
+  
+  float: left;
+}
+
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.col-60 {
+  float: left;
+  width: 60%;
+  margin-top: 6px;
+}
+
+.col-50 {
+  float: left;
+  width: 45%;
+  margin-top: 4px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#b    
+{
+text-align: right;
+margin-right: 10px;
+margin-top:10px;
+}
+			
+h3 {
+font-weight: normal;
+font-family: sans-serif;
+font-size: 19px;
+color:rgb(220,20,60);
+margin-left: 8%
+}
+
+#k {
+height: 28px;
+width: 115px;
+background-color: #3383ff;
+color: white;
+font-weight: bold;
+border: none;
+float:right;
+margin-top:10px;
+font-size: 11px;
+font-family: sans-serif;
+}
+
+label{
+ font-weight: normal;
+ font-family: sans-serif;
+ font-size: 13px;
+ color: rgb(32,32,32);
+ margin-left:8%;
+}
+
+p {
+font-weight: normal;
+font-family: sans-serif;
+color: rgb(64,64,64);
+margin-left:8%;
+
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-50, col=60,.col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div id="b">
+    <a href="index.html">Google Search page</a>
+    </div>
+	
+	<div class="row">
+		<div class="col-25">
+			<h3 style="margin-bottom:50px; margin-top:55px"> Advanced Search </h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-25">
+			<p>Find pages with...</p>
+		</div>
+	</div>
+			
+
+
+  <form action="https://www.google.com/search" >
+    <div class="row">
+      <div class="col-25">
+        <label for="allw" > all these words:</label>
+      </div>
+      <div class="col-50">
+        <input type="text" id="allw" name="as_q" >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="exactw" >this exact word or phrase:</label>
+      </div>
+      <div class="col-50">
+        <input type="text" id="exactwords" name="as_epq" >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="anyw" >any of these words:</label>
+      </div>
+      <div class="col-50">
+        <input type="text" id="anywords" name="as_oq" >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">None of these words:</label>
+      </div>
+      <div class="col-50">
+        <input type="text" id="nonew" name="as_eq" >
+      </div>
+    </div>
+	<div class="row">
+		<div class="col-25">
+		</div>
+		<div class="col-50">
+			<input type="submit" value="Advanced Search" id="k">
+		</div>
+    </div>
+  </form>
+
+
+</body>
+</html>
